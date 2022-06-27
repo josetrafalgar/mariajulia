@@ -138,13 +138,15 @@ main {
 }
 .form-sorteio a img {
   animation-name: coracaopiscado;
-  animation-duration: 700ms;
+  animation-duration: 900ms;
   animation-iteration-count: infinite;
 }
 .form-sorteio a {
+  color: #ffffffee;
   display: flex;
   flex-direction: row-reverse;
   font-size: 4rem;
+  font-weight: 800;
   margin: auto;
   align-items: center;
   width: 8.2rem;
@@ -153,13 +155,14 @@ main {
 }
 textarea {
   border-style: none;
-  color: white;
+  color: rgb(255, 251, 251);
   font-size: 4rem;
   background: none;
   font-family: var(--ff-heading);
   outline: 0;
   height: 30rem;
   box-shadow: 0 0 0 0;
+  text-align: center;
 }
 .form-area {
   height: 30rem;
@@ -167,8 +170,10 @@ textarea {
 @keyframes coracaopiscado {
   0% {
     opacity: 0;
+    transform: scaleY(0.1);
   }
   100% {
     opacity: 1;
+    transform: scaleY(1);
   }
 }
