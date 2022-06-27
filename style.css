@@ -14,8 +14,9 @@
   --text-dark: hsla(var(--hue), 100%, 11%, 1);
 
   font-size: 62.5%;
-  --fz-body: 1.6rem;
-  --fs-heading: 4rem;
+  --fz-body: 1rem;
+  --fs-heading: 2rem;
+  --heart-color: rgb(103, 15, 15);
 }
 body {
   font-family: var(--ff-texting);
@@ -24,7 +25,7 @@ body {
   color: var(--fc-primary);
 }
 .page {
-  max-width: 33rem;
+  max-width: 67rem;
   margin: 0 auto;
 }
 img {
@@ -39,7 +40,7 @@ header {
 header p {
   color: var(--fc-secondary);
   text-transform: uppercase;
-
+  font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 3px;
   font-weight: 400;
@@ -48,8 +49,11 @@ header p {
 }
 header h1 {
   font-weight: 800;
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   line-height: 4.8rem;
+}
+header span {
+  color: var(--heart-color);
 }
 main {
   display: grid;
@@ -60,6 +64,7 @@ main {
   font-family: var(--ff-texting);
 }
 .card img {
+  filter: brightness(0.4);
   height: 41.6rem;
   object-fit: cover;
   border-radius: 6px;
@@ -68,12 +73,12 @@ main {
 }
 .card img:hover {
   transform: scale(1.1);
-  opacity: 0.4;
+  filter: none;
 }
 .card h2 {
   position: absolute;
-  bottom: 5.1rem;
-  left: 2.8rem;
+  bottom: 1.8rem;
+  left: 2rem;
 
   font-size: var(--fs-heading);
   font-weight: 800;
@@ -102,10 +107,12 @@ main a {
   color: white;
   text-align: center;
   margin-bottom: 50px;
-
 }
 main {
   animation: downtop 700ms 350ms backwards;
+}
+.music {
+  display: none;
 }
 @keyframes topdown {
   0% {
@@ -126,5 +133,41 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+.form-sorteio a img {
+  animation-name: coracaopiscado;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+.form-sorteio a {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 4rem;
+  margin: auto;
+  align-items: center;
+  width: 8.2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+textarea {
+  border-style: none;
+  color: white;
+  font-size: 4rem;
+  background: none;
+  font-family: var(--ff-heading);
+  outline: 0;
+  height: 30rem;
+  box-shadow: 0 0 0 0;
+}
+.form-area {
+  height: 30rem;
+}
+@keyframes coracaopiscado {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
