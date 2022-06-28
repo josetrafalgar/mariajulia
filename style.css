@@ -164,9 +164,6 @@ textarea {
   box-shadow: 0 0 0 0;
   text-align: center;
 }
-.form-area {
-  height: 30rem;
-}
 @keyframes coracaopiscado {
   0% {
     opacity: 0;
@@ -176,4 +173,31 @@ textarea {
     opacity: 1;
     transform: scaleY(1);
   }
+}
+
+/* ------------------------*/
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00bf96;
+  display: inline-block;
+}
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816a;
+  display: inline-block;
+}
+smalltext {
+  padding-top: 5px;
+  font-size: 16px;
 }
