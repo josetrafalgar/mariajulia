@@ -19,6 +19,8 @@
   --heart-color: rgb(103, 15, 15);
 }
 body {
+  min-height: 100vh;
+
   font-family: var(--ff-texting);
   font-size: var(--fz-body);
   background-color: var(--bg-primary);
