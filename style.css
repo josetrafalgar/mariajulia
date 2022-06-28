@@ -7,8 +7,8 @@
   --ff-heading: 'Epilogue', sans-serif;
   --ff-texting: 'Open sans', sans-serif;
 
-  --hue: 10;
-  --bg-primary: hsla(var(--hue), 20%, 50%, 1);
+  --hue: 0;
+  --bg-primary: hsla(var(--hue), 45%, 50%, 1);
   --fc-secondary: hsla(var(--hue), 50%, 100%);
   --fc-primary: hsla(var(--hue), 0%, 100%);
   --text-dark: hsla(var(--hue), 100%, 11%, 1);
@@ -17,6 +17,9 @@
   --fz-body: 1rem;
   --fs-heading: 2rem;
   --heart-color: rgb(103, 15, 15);
+
+  --dark-clock--: rgb(134, 14, 14);
+  --white-darkclock--: rgb(83, 10, 10);
 }
 body {
   min-height: 100vh;
@@ -189,14 +192,14 @@ textarea {
 }
 #clockdiv > div {
   padding: 10px;
-  border-radius: 3px;
-  background: #00bf96;
+  border-radius: 15px;
+  background: var(--dark-clock--);
   display: inline-block;
 }
 #clockdiv div > span {
   padding: 15px;
   border-radius: 3px;
-  background: #00816a;
+  background: var(--white-darkclock--);
   display: inline-block;
 }
 smalltext {
